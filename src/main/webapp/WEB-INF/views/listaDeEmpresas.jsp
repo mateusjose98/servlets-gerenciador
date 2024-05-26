@@ -11,21 +11,21 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<c:import url="logout.jsp" />
 
 	<c:if test="${not empty nomeEmpresa}">
             Empresa ${ nomeEmpresa } cadastrada com sucesso!
         </c:if>
-
-	Lista de empresas:
+	USUÁRIO LOGADO => ${usuarioLogado.login} Lista de empresas:
 	<br />
 	<ul>
 		<c:forEach items="${empresas}" var="empresa">
 
 
-			<li>${empresa.nome}- <fmt:formatDate
+			<li>${empresa.nome}-<fmt:formatDate
 					value="${empresa.dataAbertura }" pattern="dd/MM/yyyy" /> <a
-				href="/gerenciador/controllerServlet?acao=mostraEmpresa&id=${empresa.id}">editar</a> <a
-				
+				href="/gerenciador/controllerServlet?acao=mostraEmpresa&id=${empresa.id}">editar</a>
+				<a
 				href="/gerenciador/controllerServlet?acao=removeEmpresa&id=${empresa.id}">remove</a>
 			</li>
 

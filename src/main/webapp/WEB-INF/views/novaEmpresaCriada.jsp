@@ -11,6 +11,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<c:import url="logout.jsp" />
         <c:if test= "${not empty nomeEmpresa}">
             Empresa ${ nomeEmpresa } cadastrada com sucesso!
         </c:if>

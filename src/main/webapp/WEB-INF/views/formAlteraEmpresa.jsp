@@ -10,7 +10,7 @@
 <title>Alterando empresa</title>
 </head>
 <body>
-
+	<c:import url="logout.jsp" />
 	<form action="${link }" method="post">
 		<input type="text" name="id" value="${empresa.id }"> 
 		<input	type="text" name="acao" value="alteraEmpresa"> Nome: 

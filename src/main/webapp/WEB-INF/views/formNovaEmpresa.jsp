@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<c:import url="logout.jsp" />
 
 	<form method="POST" action="${link}">
   <input type="text" name="acao" value="novaEmpresa">
